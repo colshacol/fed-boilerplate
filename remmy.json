@@ -1,0 +1,11 @@
+{
+  "templates": {
+    "comp": {
+      "path": "source/.remmy/comp",
+      "dest": "source/comps/"
+    }
+  },
+  "variables": {
+    "$CSS": "css"
+  }
+}

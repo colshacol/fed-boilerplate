@@ -3,8 +3,8 @@ import ReactDom from "react-dom";
 import { TESTCOMPY } from "@comps/Test";
 
 ReactDom.render(
-  <div>
-    <TESTCOMPY />
-  </div>,
-  document.getElementById("main")
+	<div>
+		<TESTCOMPY />
+	</div>,
+	document.getElementById("main")
 );

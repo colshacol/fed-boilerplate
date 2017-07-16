@@ -15,10 +15,15 @@
     [
       "react-css-modules",
       {
-        "context": "../source",
+        "context": "./source",
         "generateScopedName": "[name]_[local]__"
       }
     ]
   ],
-  "presets": ["react", "stage-0", "es2017"]
+  "presets": ["stage-0", "es2017", "react"],
+  "env": {
+    "test": {
+      "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
 }

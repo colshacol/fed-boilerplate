@@ -1,18 +1,16 @@
-const loaders = require("./loaders");
-const path = require("path");
-const fs = require("fs");
+const PrettierPlugin = require('prettier-webpack-plugin');
+const loaders = require('./loaders');
+const path = require('path');
+const fs = require('fs');
 
-console.log("\n\n\n", __dirname, "\n\n\n");
-console.log(path.resolve(__dirname, "./../source"));
-console.log(path.resolve(__dirname, "TEST"));
 module.exports = {
-  context: path.resolve(__dirname, "../source"),
+  context: path.resolve(__dirname, '../source'),
 
-  entry: "./index.js",
+  entry: './index.js',
 
   output: {
-    filename: "app.bundle.js",
-    path: path.resolve(__dirname, "../build/js")
+    filename: 'app.bundle.js',
+    path: path.resolve(__dirname, '../build/js')
   },
 
   module: {
@@ -20,11 +18,21 @@ module.exports = {
   },
 
   resolve: {
-    modules: [path.resolve(__dirname, "../node_modules")],
-
+    modules: [path.resolve(__dirname, '../node_modules')],
     alias: {
-      "@comps": path.resolve(__dirname, "../source/comps"),
-      "@styles": path.resolve(__dirname, "../source/styles")
+      '@comps': path.resolve(__dirname, '../source/comps'),
+      '@styles': path.resolve(__dirname, '../source/styles')
     }
-  }
+  },
+
+  plugins: [
+    new PrettierPlugin({
+      printWidth: 80,
+      tabWidth: 1,
+      useTabs: true,
+      semi: true,
+      encoding: 'utf-8',
+      extensions: ['.js']
+    })
+  ]
 };
