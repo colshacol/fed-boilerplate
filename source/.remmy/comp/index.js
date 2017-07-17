@@ -1,1 +1,1 @@
-export { $NAME } from './$NAME'
+export $NAME from "./$NAME";

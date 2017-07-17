@@ -1,1 +1,1 @@
-export { TestComp } from './TestComp'
+export TestComp from "./TestComp";

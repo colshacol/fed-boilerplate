@@ -2,14 +2,14 @@ import React from "react";
 import "./TestComp.css";
 
 type Props = {
-  children: any
+  caps: boolean
 };
 
 const TestComp = (props: Props) => {
   return (
     <div styleName="TestComp">
       <Choose>
-        <When condition={props.caps}>THIS IS TESTCOMP.</When>
+        <When condition={!!props.caps}>THIS IS TESTCOMP.</When>
         <Otherwise>This is TestComp.</Otherwise>
       </Choose>
     </div>

@@ -1,15 +1,15 @@
+import ava from "ava";
 import React from "react";
-import { shallow, mount, render } from "enzyme";
-import { renderJSX, JSX } from "jsx-test-helpers";
+import { shallow } from "enzyme";
 import TestComp from "../TestComp";
 
-describe("<TestComp/>", () => {
-  it("Should render caps text when caps={true}.", () => {
-    const wrapper = shallow(<TestComp caps={true} />);
-    expect(wrapper.text()).toEqual("THIS IS TESTCOMP.");
-  });
-  it("Should render non-caps text when caps={false}.", () => {
-    const wrapper = shallow(<TestComp caps={false} />);
-    expect(wrapper.text()).toEqual("This is TestComp.");
-  });
+console.log("TestComp");
+ava.test("+ handles caps={true} correctly.", t => {
+  const comp0 = shallow(<TestComp caps={true} />);
+  t.truthy(comp0.text(), "THIS IS TESTCOMP.");
+});
+
+ava.test("+ handles caps={false} correctly.", t => {
+  const comp1 = shallow(<TestComp caps={false} />);
+  t.truthy(comp1.text(), "This is TestComp.");
 });

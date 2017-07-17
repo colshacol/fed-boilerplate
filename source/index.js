@@ -1,10 +1,12 @@
+import "regenerator-runtime/runtime";
 import React from "react";
 import ReactDom from "react-dom";
-import { TESTCOMPY } from "@comps/Test";
+import { TestComp } from "@comps";
+import "@styles/reset";
 
 ReactDom.render(
-	<div>
-		<TESTCOMPY />
-	</div>,
-	document.getElementById("main")
+  <div data-app-root>
+    <TestComp caps={true} />
+  </div>,
+  document.getElementById("main")
 );

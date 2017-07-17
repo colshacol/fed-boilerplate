@@ -1,11 +1,7 @@
+import ava from "ava";
 import React from "react";
-import { shallow, mount, render } from "enzyme";
-import { renderJSX, JSX } from "jsx-test-helpers";
+import { shallow } from "enzyme";
 import $NAME from "../$NAME";
 
-describe("<$NAME/>", () => {
-  it("True should be true. (This component needs tests.)", () => {
-    const wrapper = shallow(<$NAME />);
-    expect(true).toBe(true);
-  });
-});
+console.log("$NAME");
+ava.test.todo("- write tests for $NAME.");
