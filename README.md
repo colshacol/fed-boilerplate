@@ -16,10 +16,10 @@
 ### File Structure
 
 *./build*
-_Obviously where your app compiles to.
+_Obviously where your app compiles to._
 
 *./source*
-_Obviously where you write your app.
+_Obviously where you write your app._
 
 *./source/.remmy*
 The place to create templates for your stuff.
