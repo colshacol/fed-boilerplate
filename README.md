@@ -15,26 +15,26 @@
 
 ### File Structure
 
-*./build*
+*./build*<br/>
 _Obviously where your app compiles to._
 
-*./source*
+*./source*<br/>
 _Obviously where you write your app._
 
-*./source/.remmy*
+*./source/.remmy*<br/>
 The place to create templates for your stuff.
 
-*./source/comps*
+*./source/comps*<br/>
 Holds components that are shared in your app.
 
-*./source/scenes*
+*./source/scenes*<br/>
 Holds views and their specific components.
 
-*./source/utils*
+*./source/utils*<br/>
 Holds functions that are shared in your app.
 
-*./source/consts*
+*./source/consts*<br/>
 Holds values that are shared in your app.
 
-*./source/styles*
+*./source/styles*<br/>
 Holds global CSS and global Stylus utilities.
