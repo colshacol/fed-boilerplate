@@ -14,7 +14,13 @@ module.exports = {
         modules: true,
         localIdentName: '[name]_[local]__'
       }
-    },
+		},
+		{
+			loader: 'postcss-loader',
+			options: {
+				sourceMap: true
+			}
+		},
     {
       loader: 'stylus-loader',
       options: {

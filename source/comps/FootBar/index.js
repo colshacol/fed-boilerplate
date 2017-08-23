@@ -1,0 +1,1 @@
+export FootBar from "./FootBar";

@@ -1,12 +1,12 @@
 import "regenerator-runtime/runtime";
+import DevTools from "mobx-react-devtools";
 import React from "react";
 import ReactDom from "react-dom";
-import { TestComp } from "@comps";
 import "@styles/reset";
 
 ReactDom.render(
   <div data-app-root>
-    <TestComp caps={true} />
+    <DevTools />
   </div>,
   document.getElementById("main")
 );

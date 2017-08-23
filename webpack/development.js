@@ -1,9 +1,7 @@
-const PrettierPlugin = require('prettier-webpack-plugin');
 const loaders = require('./loaders');
-const childProcess = require('child_process');
+const plugins = require('./plugins');
 const webpack = require('webpack');
 const path = require('path');
-const fs = require('fs');
 
 module.exports = {
   watch: false,
@@ -26,33 +24,25 @@ module.exports = {
     extensions: ['.js', '.json', '.styl', '.css'],
     alias: {
       '@comps': path.resolve(__dirname, '../source/comps'),
-      '@styles': path.resolve(__dirname, '../source/styles')
+			'@styles': path.resolve(__dirname, '../source/styles'),
+			'@utils': path.resolve(__dirname, '../source/utils'),
+			'@packages': path.resolve(__dirname, '../source/packages'),
     }
   },
 
   plugins: [
-    // new webpack.ProgressPlugin((percentage, msg) => {
-    //   if (percentage == 0) {
-    //       console.log('\n\n\Webpack::pre-hook:a\n\n\n');
-    //   } else if (percentage == 1) {
-    //     setTimeout(() => {
-    //       console.log('\n\n\nWebpack::post-hook:\n\n\n');
-    //       jest.run();
-    //     }, 1000);
-    //   }
-    // })
+		...plugins,
+		new webpack.HotModuleReplacementPlugin()
   ],
 
   devServer: {
     hot: true,
     overlay: true,
-    lazy: true,
-    publicPath: 'http://localhost:3000/',
+		lazy: false,
     contentBase: path.resolve(__dirname, '../build')
   },
 
   watchOptions: {
-    watch: false
-    // poll: 3000
+    watch: true
   }
 };
