@@ -1,11 +1,11 @@
-import React from "@packages";
-import "./styles/FootBar.css";
+import { React } from '@packages';
+import './styles/FootBar.css';
 
-type Props = {
+type PropsT = {
   children: any
 };
 
-const FootBar = (props: Props) => {
+const FootBar = (props: PropsT) => {
   return (
     <div styleName="FootBar">
       <p>This is FootBar.</p>

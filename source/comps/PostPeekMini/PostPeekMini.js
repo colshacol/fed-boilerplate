@@ -1,11 +1,11 @@
-import { React } from "@packages";
-import "./styles/PostPeekMini.css";
+import { React } from '@packages';
+import './styles/PostPeekMini.css';
 
-type Props = {
+type PropsT = {
   children: any
 };
 
-const PostPeekMini = (props: Props) => {
+const PostPeekMini = (props: PropsT) => {
   return (
     <div styleName="PostPeekMini">
       <p>This is PostPeekMini.</p>

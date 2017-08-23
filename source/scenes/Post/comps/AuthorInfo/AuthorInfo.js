@@ -1,11 +1,11 @@
-import { React } from "@packages";
-import "./styles/AuthorInfo.css";
+import { React } from '@packages';
+import './styles/AuthorInfo.css';
 
-type Props = {
+type PropsT = {
   children: any
 };
 
-const AuthorInfo = (props: Props) => {
+const AuthorInfo = (props: PropsT) => {
   return (
     <div styleName="AuthorInfo">
       <p>This is AuthorInfo.</p>

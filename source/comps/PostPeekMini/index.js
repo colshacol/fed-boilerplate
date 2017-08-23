@@ -1,1 +1,1 @@
-export PostPeekMini from "./PostPeekMini";
+export PostPeekMini from './PostPeekMini';

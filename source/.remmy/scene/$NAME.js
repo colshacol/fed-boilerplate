@@ -1,11 +1,11 @@
-import React from "@packages";
-import "./styles/$NAME.css";
+import { React } from '@packages';
+import './styles/$NAME.css';
 
-type Props = {
+type PropsT = {
   children: any
 };
 
-const $NAME = (props: Props) => {
+const $NAME = (props: PropsT) => {
   return (
     <div styleName="$NAME">
       <p>This is $NAME.</p>

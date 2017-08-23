@@ -1,7 +1,7 @@
-import ava from "ava";
-import React from "react";
-import { shallow } from "enzyme";
-import PostPeekMini from "../PostPeekMini";
+import ava from 'ava';
+import React from 'react';
+import { shallow } from 'enzyme';
+import PostPeekMini from '../PostPeekMini';
 
-console.log("PostPeekMini");
-ava.test.todo("- write tests for PostPeekMini.");
+console.log('PostPeekMini');
+ava.test.todo('- write tests for PostPeekMini.');

@@ -9,7 +9,7 @@
     "build": "npm run prettier && npm test && npm run pack",
     "pack-watch": "webpack-dev-server --config ./webpack/development",
     "pack": "webpack --config ./webpack/development",
-    "prettier": "prettier --write \"source/**/*.js\"",
+    "prettier": "prettier --single-quote --write \"source/**/*.js\"",
     "serve": "http-server ./build -o",
     "nodemon": "nodemon",
     "remmy": "remmy",

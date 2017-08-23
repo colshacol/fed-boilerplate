@@ -1,11 +1,11 @@
-import React from "@packages";
-import "./styles/Search.css";
+import { React } from '@packages';
+import './styles/Search.css';
 
-type Props = {
+type PropsT = {
   children: any
 };
 
-const Search = (props: Props) => {
+const Search = (props: PropsT) => {
   return (
     <div styleName="Search">
       <p>This is Search.</p>

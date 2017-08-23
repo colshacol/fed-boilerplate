@@ -1,16 +1,16 @@
-import React from "@packages";
-import "./styles/Home.css";
+import { React } from '@packages';
+import './styles/Home.css';
 
-type Props = {
-  children: any
+type PropsT = {
+	children: any
 };
 
-const Home = (props: Props) => {
-  return (
-    <div styleName="Home">
-      <p>This is Home.</p>
-    </div>
-  );
+const Home = (props: PropsT) => {
+	return (
+		<div styleName="Home">
+			<p>This is Home.</p>
+		</div>
+	);
 };
 
 export default Home;

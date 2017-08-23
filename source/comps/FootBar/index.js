@@ -1,1 +1,1 @@
-export FootBar from "./FootBar";
+export FootBar from './FootBar';

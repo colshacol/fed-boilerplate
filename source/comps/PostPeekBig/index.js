@@ -1,1 +1,1 @@
-export PostPeekBig from "./PostPeekBig";
+export PostPeekBig from './PostPeekBig';

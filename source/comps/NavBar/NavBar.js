@@ -1,11 +1,11 @@
-import { React } from "@packages";
-import "./styles/NavBar.css";
+import { React } from '@packages';
+import './styles/NavBar.css';
 
-type Props = {
+type PropsT = {
   children: any
 };
 
-const NavBar = (props: Props) => {
+const NavBar = (props: PropsT) => {
   return (
     <div styleName="NavBar">
       <p>This is NavBar.</p>

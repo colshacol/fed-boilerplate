@@ -1,11 +1,11 @@
-import { React } from "@packages";
-import "./styles/PostComment.css";
+import { React } from '@packages';
+import './styles/PostComment.css';
 
-type Props = {
+type PropsT = {
   children: any
 };
 
-const PostComment = (props: Props) => {
+const PostComment = (props: PropsT) => {
   return (
     <div styleName="PostComment">
       <p>This is PostComment.</p>
